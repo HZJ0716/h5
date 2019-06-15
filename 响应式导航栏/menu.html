@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3b7ab2bfe8.js"></script>
+    <title>响应式导航栏</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="logo">导航栏</h2>
+        <input type="checkbox" id="chk"/>
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="#">首页</a>
+            <a href="#">关于</a>
+            <a href="#">服务</a>
+            <a href="#">工作</a>
+            <a href="#">我的</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <div class="contant">
+        <section>
+            <img src="bg3.jpg">
+        </section>
+        <p>
+            Documentation
+            If you want to read about using Atom or developing packages in Atom, the Atom Flight Manual is free and available online. You can find the source to the manual in atom/flight-manual.atom.io.<br>
+            The API reference for developing packages is also documented on Atom.io.<br>
+            Installing<br>
+            Prerequisites<br>
+            Git<br>
+            macOS<br>
+            Download the latest Atom release.<br>
+            Atom will automatically update when a new release is available.<br>
+            Windows<br>
+            Download the latest Atom installer. AtomSetup.exe is 32-bit. For 64-bit systems, download AtomSetup-x64.exe.<br>
+            Atom will automatically update when a new release is available.<br>
+            You can also download atom-windows.zip (32-bit) or atom-x64-windows.zip (64-bit) from the releases page. The .zip version will not automatically update.<br>
+            Using Chocolatey? Run cinst Atom to install the latest version of Atom.<br>
+            Linux<br>
+            Atom is only available for 64-bit Linux systems.<br>
+            Configure your distribution's package manager to install and update Atom by following the Linux installation instructions in the Flight Manual. You will also find instructions on how to install Atom's official Linux packages without using a package repository, though you will not get automatic updates after installing Atom this way.
+            Archive extraction<br>
+            An archive is available for people who don't want to install atom as root.<br>
+            This version enables you to install multiple Atom versions in parallel. It has been built on Ubuntu 64-bit, but should be compatible with other Linux distributions.<br>
+            Install dependencies (on Ubuntu): sudo apt install git gconf2 gconf-service libgtk2.0-0 libudev1 libgcrypt20 libnotify4 libxtst6 libnss3 python gvfs-bin xdg-utils libcap2<br>
+            Download atom-amd64.tar.gz from the Atom releases page.<br>
+            Run tar xf atom-amd64.tar.gz in the directory where you want to extract the Atom folder.<br>
+            Launch Atom using the installed atom command from the newly extracted directory.<br>
+            The Linux version does not currently automatically update so you will need to repeat these steps to upgrade to future releases.<br>
+        </p>
+    </div>
+   
+</body>
+</html>
