@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+body{
+    background: #333;
+}
+
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+}
+
+.skill li{
+    margin: 20px 0;
+}
+
+.bar{
+  display: block;
+  background: #353b48;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+  margin: 10px 0;
+}
+
+.bar span{
+    height: 5px;
+    float: left;
+    background: #3498db;
+}
+
+.html{
+    width: 85%;
+    animation: html 2s;
+}
+
+.css{
+    width: 75%;
+    animation: css 2s;
+}
+
+.vue{
+    width: 65%;
+    animation: vue 2s;
+}
+
+.js{
+    width: 80%;
+    animation: js 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+
+@keyframes vue{
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
