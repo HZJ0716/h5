@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    img{
+      width: 730px;
+      height: 450px;
+    }
+  .screen{
+      width: 9999px;
+      height: 100vh;
+      animation: 10s banner infinite;
+  }
+  .screen{
+      float: left;
+  }
+  .banner{
+      width: 730px;
+      height: 450px;
+      overflow:hidden;
+  }
+  @keyframes banner{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-730px);
+    }
+    50%{
+        transform: translateX(-1460px);
+    }
+    75%{
+        transform: translateX(-2190px);
+    }
+    100%{
+        transform: translateX(-2920px);
+    }
+  }
+</style>
+<body>
+    <div class="banner">
+        <div class="screen">
+            <img src="a1.jpg" alt="">
+            <img src="a2.jpg" alt="">
+            <img src="a1.jpg" alt="">
+            <img src="a2.jpg" alt="">
+            <img src="a1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
