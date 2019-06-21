@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>bubble</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="bubbles" num='20' duration='5'>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+    <script>
+        (function(w, d){
+            var bubbles = d.querySelector('.bubbles');
+            // 获取最大宽度
+            var bubbleWidth = bubbles.clientWidth;
+            // 获取bubbles的属性值
+            var num = bubbles.getAttribute('num');
+            var duration = bubbles.getAttribute('duration');
+            // 动画循环
+            setInterval(bubbleUp, duration * 1000);
+
+
+            // 气泡上浮函数
+            bubbleUp();
+            function bubbleUp(){
+                bubbles.innerHTML = ''
+                for(var i=0; i< num; i++){
+                // 动态添加盒子和样式
+                var bubbleDiv = d.createElement('div');
+                bubbleDiv.classList.add('bubble');
+                // 设置生成气泡范围，气泡大小，动画时间
+                bubbleDiv.style.cssText = `
+                transform: translate(${bubbleWidth * Math.random()}px, 0) scale(${5 * Math.random()});
+                animation: up ${duration * Math.random() + 1}s ease-in-out;
+                `
+                // 向尾部插入盒子
+                bubbles.appendChild(bubbleDiv);
+                }
+            }
+
+        })(window, document)
+    </script>
+</body>
+</html>
