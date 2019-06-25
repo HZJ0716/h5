@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    background-color: #34495e;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p{
+    font-size: 6em;
+    color: rgba(255, 255, 255, .3);
+    background: url(1.jpg);
+    letter-spacing: 8px;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    animation: wave 8s linear infinite;
+}
+
+@keyframes wave{
+    from{
+        background-position: 100px 180px;
+    }
+    to{
+        background-position: 1000px 180px;
+    }
+}
