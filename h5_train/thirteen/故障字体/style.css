@@ -1,0 +1,82 @@
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #2c3e50;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::before,
+.content::after{
+    content: '严重错误';
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #fff;
+    animation: glith 2s infinite ease;
+}
+
+.content::before{
+    text-shadow: 2px 0 #8e44ad;
+    left: 1px;
+}
+
+.content::after{
+    text-shadow: -2px 0 #c0392b;
+    left: 1px;
+}
+
+@keyframes glith{
+    0%{
+        clip: rect(30px, 9999px, 99px, 0);
+    }
+    5%{
+        clip: rect(3px, 9999px, 20px, 0);
+    }
+    10%{
+        clip: rect(13px, 9999px, 30px, 0);
+    }
+    20%{
+        clip: rect(33px, 9999px, 42px, 0);
+    }
+    30%{
+        clip: rect(40px, 9999px, 56px, 0);
+    }
+    45%{
+        clip: rect(81px, 9999px, 60px, 0);
+    }
+    50%{
+        clip: rect(50px, 9999px, 79px, 0);
+    }
+    60%{
+        clip: rect(70px, 9999px, 89px, 0);
+    }
+    70%{
+        clip: rect(40px, 9999px, 79px, 0);
+    }
+    80%{
+        clip: rect(30px, 9999px, 69px, 0);
+    }
+    90%{
+        clip: rect(60px, 9999px, 59px, 0);
+    }
+    100%{
+        clip: rect(40px, 9999px, 49px, 0);
+    }
+}
