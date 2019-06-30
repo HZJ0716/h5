@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <title>photo</title>
+</head>
+<body>
+    <div class="photo-section">
+        <div class="inner">
+            <h1>JQuery 灯箱插件使用展示</h1>
+            <div class="border"></div>
+                <div class="photo">
+
+                    <a href="https://images.unsplash.com/photo-1561652970-807773cc928c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561652970-807773cc928c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1556228720-da4e85f25e15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1556228720-da4e85f25e15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561641250-c06551cf3b02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561641250-c06551cf3b02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561652970-725490281931?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561652970-725490281931?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561662849-bb93a2a37818?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561662849-bb93a2a37818?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561689532-79e5a8621fe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561689532-79e5a8621fe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561652791-1460f0ab2ed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561652791-1460f0ab2ed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1561662745-1ed72ff0bde5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="image">
+                        <img src="https://images.unsplash.com/photo-1561662745-1ed72ff0bde5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </a>
+
+                </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.photo').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {  
+            enabled: true  
+            }
+        });
+    </script>
+</body>
+</html>
