@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="full-img">
+        <h1>jQuery Ripples基于WebGL的水面涟漪特效交互动画</h1>
+    </div>
+
+    <script>
+        // resolution水波深度，perturbance涟漪数
+        $(".full-img").ripples({
+            resolution: 150,
+            perturbance: 0.01
+        });
+    </script>
+</body>
+</html>
