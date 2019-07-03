@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b7ab2bfe8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Note</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="txtb" placeholder='请输入书签'>
+        <!-- 可选 -->
+        <div class="notecomp">
+            <h3>Note Checked</h3>
+        </div>
+
+        <!-- 已选择 -->
+        <div class="comp">
+            <h3>Checked</h3>
+        </div>
+
+    </div>
+
+    <script>
+        $('.txtb').on('keyup', function(e){
+            // 13代表Enter
+            if(e.keyCode == 13 && $('.txtb').val() != ''){
+                var task = $("<div class='task'></div>").text($('.txtb').val());
+
+                // 删除便签
+                var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+                    var p =$(this).parent();
+                    p.fadeOut(function(){
+                       p.remove();
+                   });
+                });
+                // 添加便签
+                var check = $("<i class='fas fa-check'></i>").click(function(){
+                    var p =$(this).parent();
+                    p.fadeOut(function(){
+                       $('.comp').append(p);
+                       p.fadeIn();
+                   });
+                   $(this).remove();
+                });
+                task.append(del, check);
+                $('.notecomp').append(task);
+                // 清除输入框
+                $('.txtb').val("");
+            }
+        });
+    </script>
+</body>
+</html>
